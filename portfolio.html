@@ -371,6 +371,26 @@
             </li>
           </ul>
         </div>
+        <!-- Правая сторона с подпиской -->
+        <div class="subscription"></div>
+        <!-- Форма "подпишитесь на рассылку" -->
+        <form class="subscription-form">
+          <label for="mail" class="subscription-mail upper">Подпишитесь на рассылку</label>
+          <input
+            type="email"
+            name="mail"
+            class="mail-input"
+            id="mail"
+            placeholder="E-mail"
+            maxlength="50"
+          />
+          <button type="submit" class="button subscribe-button">
+            Подписаться
+            <svg class="icon-send" width="24" height="24">
+              <use href="./images/symbol-defs.svg#send"></use>
+            </svg>
+          </button>
+        </form>
       </div>
     </footer>
   </body>
