@@ -542,6 +542,7 @@ button {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--rare-text-color);
+  margin-bottom: 20px;
 }
 /* Оформили стили списка кнопок в Портфолио*/
 .style-scope-button {
@@ -604,8 +605,11 @@ button {
 }
 /* Оформили стиль кнопке подписки в Футере */
 .subscribe-button {
-  display: inline-flex;
-  justify-content: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: left;
   padding: 10px 29px;
   align-items: center;
   border-radius: 4px;
@@ -704,6 +708,32 @@ button {
 /* Оформили позиционирование секций футера */
 .footer-position .footer-left + .footer-right {
   margin-left: 70px;
+}
+
+.subscription {
+  margin-left: 93px;
+}
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 572px;
+}
+/* оформили форму с имейлом */
+.mail-input {
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  padding-left: 12px;
+  margin-right: 12px;
 }
 /* Оформили бекдроп. Позиция фиксед, чтоб не проскролливался */
 .backdrop {
