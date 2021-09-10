@@ -534,6 +534,15 @@ button {
   color: var(--rare-text-color);
   margin-bottom: 20px;
 }
+.subscription-mail.upper {
+  text-transform: uppercase;
+  color: var(--rare-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--rare-text-color);
+}
 /* Оформили стили списка кнопок в Портфолио*/
 .style-scope-button {
   font-weight: 500;
@@ -575,22 +584,45 @@ button {
   padding: 10px 32px;
   margin-left: auto;
   margin-right: auto;
-  align-items: center;
   border-radius: 4px;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--rare-text-color);
   background-color: var(--accent-color);
-  border-color: transparent;
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   transition: color 250ms var(--time-deploy), background-color 250ms var(--time-deploy);
 }
 /* Оформили ховер и фокус кнопке в Студия */
 .button-primary:hover,
 .button-primary:focus {
+  background-color: #188ce8;
+}
+/* Оформили стиль кнопке подписки в Футере */
+.subscribe-button {
+  display: inline-flex;
+  justify-content: center;
+  padding: 10px 29px;
+  align-items: center;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--rare-text-color);
+  background-color: var(--accent-color);
+  border: 0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: color 250ms var(--time-deploy), background-color 250ms var(--time-deploy);
+}
+.subscribe-button:hover,
+.subscribe-button:focus {
   background-color: #188ce8;
 }
 /* Задали ховер и фокус карточкам в Портфолио*/
@@ -657,6 +689,10 @@ button {
 }
 .footer-icon {
   fill: currentColor;
+}
+.icon-send {
+  fill: var(--rare-text-color);
+  margin-left: 10px;
 }
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
