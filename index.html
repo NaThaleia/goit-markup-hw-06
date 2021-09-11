@@ -536,11 +536,12 @@
           <label for="mail" class="subscription-mail upper">Подпишитесь на рассылку</label>
           <input
             type="email"
-            name="mail"
+            name="user-email"
             class="mail-input"
             id="mail"
             placeholder="E-mail"
             maxlength="50"
+            required
           />
           <button type="submit" class="button subscribe-button">
             Подписаться
@@ -559,6 +560,83 @@
             <use href="./images/symbol-defs.svg#close"></use>
           </svg>
         </button>
+        <form action="#" class="data-form">
+          <p class="form-text">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="data-form-field">
+            <label for="input-name" class="data-form-label">Имя</label>
+            <span class="input-wrap">
+              <input
+                type="text"
+                id="input-name"
+                class="data-form-input"
+                name="user-name"
+                maxlength="50"
+                required
+              />
+              <svg class="data-icon" width="12" height="12">
+                <use href="./images/symbol-defs.svg#person"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="data-form-field">
+            <label for="input-phone" class="data-form-label">Телефон</label>
+            <span class="input-wrap">
+              <input
+                type="tel"
+                id="input-phone"
+                class="data-form-input"
+                name="user-phone"
+                maxlength="50"
+                required
+              />
+              <svg class="data-icon" width="13" height="13">
+                <use href="./images/symbol-defs.svg#phone"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="data-form-field">
+            <label for="input-email" class="data-form-label">Почта</label>
+            <span class="input-wrap">
+              <input
+                type="email"
+                id="input-email"
+                class="data-form-input"
+                name="user-email"
+                maxlength="50"
+                required
+              />
+              <svg class="data-icon" width="15" height="12">
+                <use href="./images/symbol-defs.svg#mail"></use>
+              </svg>
+            </span>
+          </div>
+          <div class="data-form-field text-input">
+            <label for="input-comment" class="data-form-label">Комментарий</label>
+            <textarea
+              name="modal-comment"
+              id="input-comment"
+              class="modal-comment"
+              placeholder="Введите текст"
+            ></textarea>
+          </div>
+          <div class="data-form-field">
+            <input
+              type="checkbox"
+              id="agreement"
+              name="agreement"
+              class="checkbox visually-hidden"
+              required
+            />
+            <label for="agreement" class="check-label"
+              ><span class="check-icon"
+                ><svg width="14" height="12">
+                  <use href="./images/symbol-defs.svg#check"></use></svg></span
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="agreement-link">Условия договора</a>
+            </label>
+          </div>
+          <button type="submit" class="button send-button">Отправить</button>
+        </form>
       </div>
     </div>
     <!-- Подключили скрипт -->
